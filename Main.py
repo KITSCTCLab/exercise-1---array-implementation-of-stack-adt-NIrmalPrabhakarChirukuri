@@ -1,15 +1,15 @@
-import os
 class Stack:
     def __init__(self, size):
-        self.items = []
-        self.size = size
+       self.size = size
+       self.lst = [None]*size
+       self.top = -1 
 
     def is_empty(self):
+        # Write code here
         if self.top == -1 :
             return 1
         else :
             return 0
-
 
     def is_full(self):
         # Write code here
@@ -29,10 +29,11 @@ class Stack:
             # Write code here
             del self.lst[self.top]
             self.top-=1
+            
 
     def status(self):
         # Write code here
-        if not self.is_empty():
+         if not self.is_empty():
             for i in range(0,self.top+1):
                 print(self.lst[i])
 
