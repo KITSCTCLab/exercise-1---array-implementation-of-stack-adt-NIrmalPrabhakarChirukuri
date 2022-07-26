@@ -1,6 +1,5 @@
-
 class Stack:
-    def__init__(self, size):
+    def __init__(self, size):
         self.items = []
         self.size = size
 
