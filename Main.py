@@ -32,7 +32,7 @@ class Stack:
         
             
 # Do not change the following code
-size, queries = map(int, input().rstrip().split())
+size,queries = map(int, input().rstrip().split())
 stack = Stack(size)
 for line in range(queries):
     values = list(map(int, input().rstrip().split()))
